@@ -1,0 +1,99 @@
+.mobile-only {
+	display: block;
+	visibility: visible;
+
+	@media #{$tablet} {
+		display: none;
+		visibility: hidden;
+	}
+
+	@media #{$tablet-ipad} {
+		display: none;
+		visibility: hidden;
+	}
+
+	@media #{$desktop} {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.mobile-tablet {
+	display: block;
+	visibility: visible;
+
+	@media #{$tablet} {
+		display: block;
+		visibility: visible;
+	}
+
+	@media #{$tablet-ipad} {
+		display: none;
+		visibility: hidden;
+	}
+
+	@media #{$desktop} {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.mobile-tablet-ipad {
+	display: block;
+	visibility: visible;
+
+	@media #{$tablet} {
+		display: block;
+		visibility: visible;
+	}
+
+	@media #{$tablet-ipad} {
+		display: block;
+		visibility: visible;
+	}
+
+	@media #{$desktop} {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.ipad-desktop {
+	display: none;
+	visibility: hidden;
+
+	@media #{$tablet} {
+		display: none;
+		visibility: hidden;
+	}
+
+	@media #{$tablet-ipad} {
+		display: block;
+		visibility: visible;
+	}
+
+	@media #{$desktop} {
+		display: block;
+		visibility: visible;
+	}
+}
+
+.desktop-only {
+	display: none;
+	visibility: hidden;
+
+	@media #{$tablet} {
+		display: none;
+		visibility: hidden;
+	}
+
+	@media #{$tablet-ipad} {
+		display: none;
+		visibility: hidden;
+	}
+
+	@media #{$desktop} {
+		display: block;
+		visibility: visible;
+	}
+}

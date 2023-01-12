@@ -1,0 +1,99 @@
+// COLORS
+
+
+$bodyColor:			#000000;
+$headerColor:			#000000;
+$white:				#FFFFFF;
+$brand-color: 		#3340FF; // BLUE
+$brand-color-hover:	#4753ff; // 10% brighter blue
+$brand-color-light: 	#2394FA; // LIGHT BLUE
+$brand-color-dark:	#191f7f; // 20% darker blue
+$grey-99:			#FCFCFC;
+$grey-98:			#FAFAFA;
+$grey-90:			#E6E6E6;
+$grey-80:			#CCCCCC;
+$grey-70:			#B3B3B3;
+$grey-60:			#999999;
+$grey-50:			#808080;
+$grey-40:			#666666;
+$grey-30:			#4D4D4D;
+$grey-20:			#333333;
+$grey-10:			#1A1A1A;
+$black:				#000000;
+$dribbble:			#EA4C89;
+$twitter:			#2394FA;
+$invision: 			#ff3366;
+$craft: 			rgb(0, 135, 254);
+
+
+
+
+
+.light {
+	color: $white;
+}
+
+.grey-bg {
+	background-color: $grey-98;
+}
+
+.indicator--orange-gradient {
+	background: #ff9a02;
+	background: -moz-linear-gradient(-45deg, #ff9a02 0%, #ffcc17 100%);
+	background: -webkit-linear-gradient(-45deg, #ff9a02 0%,#ffcc17 100%);
+	background: linear-gradient(135deg, #ff9a02 0%,#ffcc17 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9a02', endColorstr='#ffcc17',GradientType=1 );
+	box-shadow: 0 2px 2px rgba(43, 93, 100, .2);
+}
+
+.indicator--green-gradient {
+	background: #2ffd0f;
+	background: -moz-linear-gradient(-45deg, #2ffd0f 0%, #15e3fa 100%);
+	background: -webkit-linear-gradient(-45deg, #2ffd0f 0%,#15e3fa 100%);
+	background: linear-gradient(135deg, #2ffd0f 0%,#15e3fa 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ffd0f', endColorstr='#15e3fa',GradientType=1 );
+	box-shadow: 0 2px 2px rgba(168, 88, 92, .2);
+}
+
+
+.opacity {
+	&-10 {
+		opacity: .1;
+	}
+
+	&-20 {
+		opacity: .2;
+	}
+
+	&-30 {
+		opacity: .3;
+	}
+
+	&-40 {
+		opacity: .4;
+	}
+
+	&-50 {
+		opacity: .5;
+	}
+
+	&-60 {
+		opacity: .6;
+	}
+
+	&-70 {
+		opacity: .7;
+	}
+
+	&-80 {
+		opacity: .8;
+	}
+
+	&-90 {
+		opacity: .9;
+	}
+}
+
+
+
+

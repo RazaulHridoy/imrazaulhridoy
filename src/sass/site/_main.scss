@@ -1,0 +1,481 @@
+// MAIN
+
+.services-slide {
+	animation-delay: .4s;
+	padding-bottom: 70px;
+}
+
+.services-intro-content {
+	margin-bottom: 50px;
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+
+	@media #{$tablet-ipad} {
+		max-width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	@media #{$desktop} {
+		margin-bottom: 60px;
+	}
+
+	.intro {
+		@media #{$tablet-ipad} {
+			width: 48%;
+			margin: 0;
+		}
+
+		@media #{$desktop-big} {
+			width: 46%;
+		}
+	}
+	
+	.title-eyebrow {
+		margin-bottom: 6px;
+
+		@media #{$mobile-i6} {
+			margin-bottom: 10px;
+		}
+	}
+
+	.intro-lead {
+		font-size: 18px;
+		margin-bottom: 30px;
+
+		@media #{$mobile-i6} {
+			font-size: 21px;
+		}
+
+		@media #{$tablet-ipad} {
+			font-size: 18px;
+		}
+
+		@media #{$desktop} {
+			width: 110%;
+		}
+
+		@media #{$desktop-big} {
+			font-size: 21px;
+			width: 110%;
+		}
+	}
+
+	.cta-buttons {
+		margin: 0;
+
+		@media #{$tablet-ipad} {
+			width: 48%;
+			text-align: right;
+		}
+
+		@media #{$desktop-big} {
+			width: 46%;
+		}
+
+		a:first-child {
+			margin-right: 5px;
+
+			@media #{$mobile-i6} {
+				margin-right: 20px;
+			}
+
+			@media #{$tablet-ipad} {
+				margin-right: 5px;
+			}
+
+			@media #{$desktop} {
+				margin-right: 20px;
+			}
+		}
+	}
+}
+
+.page-h2--services {
+	font-size: 36px;
+	line-height: 1;
+	margin-bottom: 10px;
+
+	@media #{$mobile-i6} {
+		font-size: 42px;
+	}
+
+	@media #{$tablet} {
+		font-size: 60px;
+	}
+
+	@media #{$tablet-ipad} {
+		font-size: 46px;
+	}
+
+	@media #{$desktop} {
+		font-size: 60px;
+	}
+
+	@media #{$desktop-big} {
+		font-size: 70px;
+	}
+}
+
+.services-detail-columns {
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 0px;
+
+	@media #{$tablet-ipad} {
+		max-width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+
+.services-detail-column {
+	margin-bottom: 30px;
+	margin-left: 0;
+	margin-right: 0;
+
+	@media #{$mobile-i6} {
+		margin-bottom: 50px;
+	}
+
+	@media #{$desktop} {
+		margin-bottom: 60px;
+	}
+
+	@media #{$desktop-big} {
+		margin-bottom: 100px;
+	}
+
+	@media #{$tablet-ipad} {
+		width: 48%;
+	}
+
+	@media #{$desktop-big} {
+		width: 46%;
+	}
+
+	&:nth-last-child(2) {
+		@media #{$tablet-ipad} {
+			margin-bottom: 0;
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	
+	.page-h3--services-column-title {
+		font-weight: $font-weight__extrabold;
+		font-size: 28px;
+		margin-bottom: 5px;
+
+		@media #{$mobile-i6} {
+			font-size: 32px;
+		}
+
+		@media #{$tablet} {
+			font-size: 38px;
+		}
+
+		@media #{$tablet-ipad} {
+			font-size: 32px;
+		}
+
+		@media #{$desktop} {
+			font-size: 38px;
+		}
+	}
+
+	p {
+		font-size: 16px;
+		margin-bottom: 0;
+		color: rgba(0, 0, 0, .8);
+
+		@media #{$mobile-i6} {
+			font-size: 18px;
+		}
+
+		@media #{$desktop-big} {
+			font-size: 21px;
+		}
+
+		strong {
+			color: $black;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+.slide-about-me {
+	background: $grey-99;
+
+	.flex-2-col {
+		@media #{$tablet-ipad} {
+			align-items: flex-start;
+		}
+	}
+
+	.col-2-content {
+		@media #{$tablet-ipad} {
+			max-width: 100%;
+			width: 61%;
+			margin-right: 20px;
+		}
+	}
+
+	.col-2-visual {
+		@media #{$tablet-ipad} {
+			width: 28%;
+			margin-top: 40px;
+			max-width: 250px;
+		}
+
+		@media #{$desktop} {
+			margin-top: 45px;
+		}
+	}
+
+	.content-text {
+		margin-bottom: 50px;
+		max-width: 550px;
+
+		@media #{$tablet-ipad} {
+			max-width: 100%;
+		}
+
+		@media #{$desktop} {
+			max-width: 600px;
+		}
+	}
+
+	.content-lead {
+		font-size: 18px;
+
+		@media #{$mobile-i6} {
+			font-size: 21px;
+		}
+
+		@media #{$tablet-ipad} {
+			margin-bottom: 30px;
+		}
+
+		@media #{$desktop} {
+			font-size: 23px;
+		}
+
+		@media #{$desktop-big} {
+			font-size: 27px;
+		}
+	}
+
+	.more {
+		@media #{$desktop} {
+			font-size: 21px;
+		}
+	}
+
+}
+
+.profile-signature {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 0px;
+	align-items: center;
+
+	.profile-img {
+		margin: 0;
+		position: relative;
+	}
+
+	.img {
+		width: 50px;
+		height: 50px;
+		margin: 0;
+		border-radius: 50%;
+		overflow: hidden;
+
+		img {
+			border-radius: 50%;
+		}
+	}
+
+	.name {
+		margin: 0;
+		margin-left: 10px;
+
+		p {
+			font-size: 14px;
+			margin: 0;
+			transition: .3s;
+
+			@media #{$desktop} {
+				font-size: 16px;
+			}
+		}
+	}
+
+	&--contact {
+		.profile-signature__link {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			margin-top: 0px;
+			align-items: center;
+			width: initial;
+			margin: 0;
+
+			&:hover p {
+				color: $brand-color;
+			}
+		}
+
+		.estimate-indicator--circle {
+			position: absolute;
+			bottom: -2px;
+			left: auto;
+			right: -2px;
+			margin: 0;
+			width: 14px;
+			height: 14px;
+			border: 1px solid $white;
+		}
+
+		.name {
+			p {
+				@media #{$desktop} {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+
+.social-links {
+	&__container {
+
+		max-width: 550px;
+
+
+		.page-h3 {
+			font-size: 24px;
+			margin-bottom: 6px;			
+		}
+
+		.small-hint {
+			font-size: 14px;
+			max-width: 220px;
+			margin-left: 0;
+			margin-bottom: 30px;
+
+			@media #{$desktop} {
+				margin-bottom: 40px;
+			}
+
+			span {
+				display: inline;
+				font-size: inherit;
+			}
+		}
+	}
+
+	&__item {
+		margin-bottom: 25px;
+		display: flex;
+
+		@media #{$desktop} {
+			margin-bottom: 30px;
+		}
+
+		&:hover .social-links__name {
+			@media #{$desktop} {
+				color: $brand-color;
+			}
+		}
+	}
+
+	&__flex {
+		display: inline-flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		width: auto;
+		margin-left: -8px;
+		padding: 6px 8px;
+		border-radius: 6px;
+		transition: ease .3s all;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, .04);
+		}
+	}
+
+	&__icon {
+		margin: 0;
+	}
+
+	&__name {
+		font-size: 16px;
+		margin-bottom: 0;
+		margin-left: 15px;
+		line-height: 1;
+		transition: .3s;
+		margin-right: 0;
+	}
+
+	.social-icon-color {
+		fill: $brand-color;
+	}
+}
+
+
+.hero--subpage {
+	padding-top: 100px;
+
+	@media #{$tablet} {
+		padding-top: 120px;
+	}
+
+	@media #{$desktop} {
+		padding-top: 130px;
+	}
+
+	@media #{$desktop-big} {
+		padding-top: 130px;
+	}
+
+	.content-text {
+		@media #{$desktop} {
+			max-width: 600px !important;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

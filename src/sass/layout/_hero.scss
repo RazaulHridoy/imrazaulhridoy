@@ -1,0 +1,438 @@
+// HERO
+
+
+.hero {
+	padding-top: 90px;
+
+	@media #{$mobile-i6} {
+		padding-top: 110px;
+	}
+
+	@media #{$tablet-ipad} {
+		padding-top: 140px;
+	}
+
+	@media #{$desktop-big} {
+		padding-top: 150px;
+	}
+
+	&__intro {
+		text-align: left;
+		margin-bottom: 60px;
+		max-width: 400px;
+
+		@media #{$tablet} {
+			max-width: 500px;
+			margin-bottom: 80px;
+		}
+
+		@media #{$desktop} {
+			text-align: left;
+			margin-bottom: 0;
+			margin-left: 0;
+			max-width: 520px;
+			margin-right: 0;
+		}
+	}
+
+	&__title {
+		text-align: left;
+		animation-duration: 2s;
+		animation-name: fadeInUp;
+		will-change: opacity, transform;
+		animation-delay: .1s;
+		animation-fill-mode: both;
+		animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+		@media #{$desktop} {
+			text-align: left;
+		}
+	}
+
+	&__subtitle {
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+		animation-duration: 2s;
+		animation-name: fadeInUp;
+		will-change: opacity, transform;
+		animation-delay: .2s;
+		animation-fill-mode: both;
+		animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+		color: rgba(0, 0, 0, .7);
+
+		@media #{mobile-i6} {
+			position: relative;
+		}
+		
+		@media #{$desktop} {
+			text-align: left;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+	.hero__cta {
+		animation-duration: 2s;
+		animation-name: fadeInUp;
+		will-change: opacity, transform;
+		animation-delay: .3s;
+		animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+		animation-fill-mode: both;
+		margin-bottom: 30px;
+
+		@media #{$desktop} {
+			margin-bottom: 60px;
+		}
+	}
+
+	.flex-2-col {
+		@media #{$tablet-ipad} {
+			flex-direction: column;
+		}
+
+		@media #{$desktop} {
+			flex-direction: row;
+		}
+	}
+
+	.content-text {
+		@media #{$desktop} {
+			width: 50%;
+			flex: none;
+			margin-right: 30px;
+		}
+	}
+
+	.content-visual {
+		@media #{$desktop} {
+			margin-left: 0px;
+			margin-right: 0;
+		}
+	}
+
+	.profile-signature--contact {
+		animation-name: fadeInUp;
+		animation-duration: 2s;
+		will-change: opacity, transform;
+		animation-delay: .4s;
+		animation-fill-mode: both;
+		animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+	}
+}
+
+
+
+.floating-images {
+	position: relative;
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	will-change: opacity, transform;
+
+	animation-name: heroImg;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-delay: .5s;
+
+	&__container {
+		height: 360px;
+
+		@media #{$tablet-ipad} {
+			height: 570px;
+		}
+	}
+
+	@media #{$mobile-i6} {
+		width: 360px;
+	}
+
+	@media #{$tablet-ipad} {
+		width: 550px;
+	}
+
+	@media #{$desktop} {
+		width: 530px;
+	}
+}
+
+.floating-image .image {
+	@include imgpreset;
+	width: 100%;
+	height: 100%;
+}
+
+.floating-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+	border-radius: 4px;
+	will-change: transform;
+}
+
+@mixin floating-image-size($img-width) {
+	$width: $img-width;
+	width: $width;
+	height: $width * 0.75;
+}
+
+.floating-image {
+	&:nth-child(1) {
+		@include floating-image-size(45px);
+		left: auto;
+		right: 40px;
+		top: 0;
+		transition: .3s;
+		animation: float 6s alternate infinite ease-in-out;
+		filter: blur(2px);
+
+		@media #{$mobile-i6} {
+			@include floating-image-size(50px);
+			left: auto;
+			right: 47px;
+		}
+
+		@media #{$tablet-ipad} {
+			@include floating-image-size(70px);
+			top: 0;
+			right: 70;
+			left: auto;
+		}
+	}
+
+	&:nth-child(2) {
+		@include floating-image-size(65px);
+		left: auto;
+		right: 120px;
+		top: 5px;
+		transition: .3s;
+		animation: float 6s alternate infinite ease-in-out;
+		animation-delay: -5s;
+		filter: blur(2px);
+
+		@media #{$mobile-i6} {
+			@include floating-image-size(70px);
+			left: auto;
+			right: 134px;
+		}
+
+		@media #{$tablet-ipad} {
+			@include floating-image-size(100px);
+			top: 7px;
+			right: 205px;
+			left: auto;
+		}
+	}
+
+	&:nth-child(3) {
+		@include floating-image-size(78px);
+		left: auto;
+		right: 20px;
+		top: 70px;
+		transition: .3s;
+		animation: float 6s alternate infinite ease-in-out;
+		animation-delay: -3s;
+		filter: blur(2px);
+
+		@media #{$mobile-i6} {
+			@include floating-image-size(83px);
+			left: auto;
+			right: 30px;
+			top: 60px;
+		}
+
+		@media #{$tablet-ipad} {
+			@include floating-image-size(120px);
+			top: 93px;
+			right: 40px;
+			left: auto;
+		}
+	}
+
+	&:nth-child(4) {
+		@include floating-image-size(98px);
+		left: auto;
+		right: 0px;
+		top: 264px;
+		transition: .3s;
+		animation: float 6s alternate infinite ease-in-out;
+		animation-delay: -4.5s;
+
+		@media #{$mobile-i6} {
+			@include floating-image-size(103px);
+			right: 10px;
+		}
+
+		@media #{$tablet-ipad} {
+			@include floating-image-size(150px);
+			left: auto;
+			right: 0;
+			top: 376px;
+		}
+	}
+
+	&:nth-child(5) {
+		@include floating-image-size(60px);
+		left: 30px;
+		right: auto;
+		top: 347px;
+		transition: .3s;
+		animation: float 6s alternate infinite ease-in-out;
+		animation-delay: -1.8s;
+		filter: blur(2px);
+
+		@media #{$mobile-i6} {
+			@include floating-image-size(65px);
+			top: 347px;
+		}
+
+		@media #{$tablet-ipad} {
+			@include floating-image-size(90px);
+			top: 504px;
+			left: 75px;
+			right: auto;
+		}
+	}
+
+	&:nth-child(6) {
+		@include floating-image-size(98px);
+		left: auto;
+		right: 60px;
+		top: 25px;
+		transition: .3s;
+		animation: float 6s alternate infinite ease-in-out;
+		animation-delay: -1.6s;
+
+		@media #{$mobile-i6} {
+			@include floating-image-size(103px);
+			left: auto;
+			right: 60px;
+			top: 30px;
+		}
+
+		@media #{$tablet-ipad} {
+			@include floating-image-size(150px);
+			top: 37px;
+			left: auto;
+			right: 95px;
+		}
+	}
+
+	&:nth-child(7) {
+		@include floating-image-size(124px);
+		left: 10px;
+		right: auto;
+		top: 144px;
+		transition: .3s;
+		animation: float 6s alternate infinite ease-in-out;
+		animation-delay: -3.6s;
+
+		@media #{$mobile-i6} {
+			@include floating-image-size(129px);
+			left: 30px;
+			right: auto;
+			top: 144px;
+		}
+
+		@media #{$tablet-ipad} {
+			@include floating-image-size(190px);
+			left: 45px;
+			right: auto;
+			top: 222px;
+		}
+	}
+
+	&:nth-child(8) {
+		@include floating-image-size(130px);
+		left: 60px;
+		right: auto;
+		top: 272px;
+		transition: .3s;
+		animation: float 6s alternate infinite ease-in-out;
+		animation-delay: -5.6s;
+
+		@media #{$mobile-i6} {
+			@include floating-image-size(135px);
+			left: 60px;
+			top: 272px;
+		}
+
+		@media #{$tablet-ipad} {
+			@include floating-image-size(200px);
+			top: 388px;
+			left: auto;
+			right: 210px;
+		}
+	}
+
+	&:nth-child(9) {
+		@include floating-image-size(118px);
+		left: 90px;
+		right: auto;
+		top: 90px;
+		transition: .3s;
+		animation: float 6s alternate infinite ease-in-out;
+		animation-delay: -0.6s;
+
+		@media #{$mobile-i6} {
+			@include floating-image-size(123px);
+			left: 90px;
+			top: 90px;
+		}
+
+		@media #{$tablet-ipad} {
+			@include floating-image-size(180px);
+			top: 123px;
+			left: 145px;
+			right: auto;
+		}
+	}
+
+	&:nth-child(10) {
+		@include floating-image-size(156px);
+		left: auto;
+		right: 40px;
+		top: 170px;
+		transition: .3s;
+		animation: float 6s alternate infinite ease-in-out;
+		animation-delay: -6.6s;
+
+		@media #{$mobile-i6} {
+			@include floating-image-size(161px);
+			left: auto;
+			top: 160px;
+			right: 40px;
+		}
+
+		@media #{$tablet-ipad} {
+			@include floating-image-size(240px);
+			top: 232px;
+			right: 40px;
+			left: auto;
+		}
+	}
+
+	&:nth-child(11) {
+		@include floating-image-size(130px);
+		left: 0px;
+		right: auto;
+		top: 10px;
+		transition: .3s;
+		animation: float 6s alternate infinite ease-in-out;
+		animation-delay: -2.6s;
+
+		@media #{$mobile-i6} {
+			@include floating-image-size(135px);
+			left: 0px;
+			top: 10px;
+		}
+
+		@media #{$tablet-ipad} {
+			@include floating-image-size(200px);
+			top: 18px;
+			left: 0;
+		}
+	}
+}

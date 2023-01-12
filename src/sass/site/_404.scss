@@ -1,0 +1,101 @@
+// 404
+
+
+.slide--404 {
+	height: auto;
+	min-height: 450px;
+	padding-top: 0;
+	padding-bottom: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	@media #{$mobile-i6} {
+		height: calc( 100vh - 150px );
+	}
+
+	@media #{$tablet-ipad} {
+		height: calc( 100vh - 100px );
+	}
+
+	.emoji {
+		display: inline-block;
+		width: 30px;
+		vertical-align: baseline;
+
+		@media #{$mobile-i6} {
+			width: 40px;
+		}
+
+		@media #{$tablet} {
+			width: 60px;
+		}
+
+		@media #{$desktop} {
+			width: 65px;
+		}
+	}
+
+	.content-text {
+		padding-left: 4%;
+		padding-right: 4%;
+		max-width: 400px;
+
+		@media #{$tablet} {
+			max-width: 550px;
+		}
+
+		@media #{$desktop} {
+			max-width: 600px;
+		}
+	}
+
+	.page-h1 {
+		margin-bottom: 20px;
+		font-size: 34px;
+
+		@media #{$mobile-i6} {
+			font-size: 40px;
+		}
+
+		@media #{$tablet} {
+			font-size: 60px;
+		}
+
+		@media #{$tablet-ipad} {
+			font-size: 63px;
+		}
+
+		@media #{$desktop} {
+			font-size: 65px;
+		}
+
+		@media #{$desktop-big} {
+			font-size: 70px;
+		}
+	}
+
+	.content-lead {
+		max-width: 450px;
+	}
+
+	.cta-buttons {
+		@media #{$tablet-ipad} {
+			margin-top: 30px;
+		}
+	}
+
+	.button {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.blue-dot {
+		color: $brand-color;
+		display: inline;
+		font-size: inherit;
+		font-weight: inherit;
+	}
+
+}
