@@ -1,0 +1,34 @@
+// iPhone X mockup
+
+@mixin iphone-x-mockup-size($img-width) {
+	$width: $img-width;
+	width: $width;
+	height: $width * 1.9889;
+}
+
+.iphone-x-mockup-container {
+	position: relative;
+	// @include iphone-x-mockup-size(288px);
+
+	.iphone-x {
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+	}
+
+	.iphone-x-screen-content {
+		width: 86.211111%;
+		height: 93.74947%;
+		position: absolute;
+		top: 3.142440%;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 1;
+		transition: .3s;
+		transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
+	}
+
+}

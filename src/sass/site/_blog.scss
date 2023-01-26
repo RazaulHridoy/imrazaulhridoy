@@ -1,0 +1,18 @@
+// BLOG
+
+.articles-section--blog-page {
+   
+    .articles .article {
+        @media #{$tablet-ipad} {
+            margin-bottom: 60px;
+        }
+
+        @media #{$desktop} {
+            margin-bottom: 70px;
+        }
+
+        @media #{$desktop-big} {
+            margin-bottom: 80px;
+        }
+    } 
+}

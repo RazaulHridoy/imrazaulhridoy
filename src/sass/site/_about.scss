@@ -1,0 +1,139 @@
+// ABOUT
+
+.hero--about {
+    padding-bottom: 0;
+
+    .content-lead {
+        max-width: 550px;
+    }
+
+    .hero__image {
+        width: 100%;
+        height: 300px;
+        margin-top: 40px;
+
+        @media #{$mobile-i6p} {
+            height: 400px;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media #{$tablet} {
+            border-radius: 6px;
+            margin-top: 60px;
+            height: 450px;
+        }
+
+        @media #{$desktop} {
+            max-width: 900px;
+            height: 550px;
+        }
+
+        @media #{$desktop-big} {
+            max-width: 1000px;
+            height: 600px;
+        }
+    }
+
+}
+
+.about-me-text-section {
+
+    @media #{$tablet-ipad} {
+        padding-top: 80px;
+    }
+    
+    .text-container {
+        margin-bottom: 60px;
+        max-width: 550px;
+
+        @media #{$mobile-i6} {
+            margin-bottom: 80px;
+        }
+
+        @media #{$desktop} {
+            max-width: 650px;
+            margin-bottom: 100px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .title-eyebrow {
+            font-size: 18px !important;
+            margin-bottom: 8px !important;
+
+            @media #{$desktop} {
+                font-size: 20px !important;
+                margin-bottom: 8px !important;
+            }
+        }
+
+        .page-h2 {
+            @media #{$mobile-i6} {
+                font-size: 36px;
+            }
+
+            @media #{$desktop} {
+                font-size: 42px;
+                margin-bottom: 30px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+
+            @media #{$desktop} {
+                font-size: 21px;
+            }
+        }
+        
+    }
+
+}
+
+.instagram-slide {
+
+    .content-text {
+        max-width: 550px;
+        margin-bottom: 50px;
+
+        @media #{$tablet-ipad} {
+            margin-bottom: 70px;
+        }
+    }
+
+}
+
+.instagram-feed {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+
+    @media #{$tablet-ipad} {
+        max-width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .instagram-img-container {
+        margin-bottom: 30px;
+        transition: all .2s ease;
+
+        @media #{$tablet-ipad} {
+            width: 30%;
+        }
+
+        &:hover {
+            @media #{$desktop} {
+                box-shadow: 0 0 1px rgba(0, 0, 0, .05),
+                0 15px 30px rgba(0, 0, 0, .05);
+            }
+        }
+    }
+}
